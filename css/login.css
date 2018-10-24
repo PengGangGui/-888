@@ -1,0 +1,115 @@
+section{
+    width:100%;
+    height:650px;
+    background:url(../img/login_register/login_register_back.jpg) no-repeat;
+    background-size:100% 100%;
+}
+.back-img{
+    width:100%;
+    height:650px;
+    background-color: rgba(0,0,0,0.3);
+}
+div.back-img>div.login{
+    width:370px;
+    height:520px;
+    background: #ffffff;
+    top:53px;
+    right:88px;
+}
+.tc{
+    text-align:center;
+}
+div.login>div:first-child{
+    padding-top:40px;
+    padding-bottom:15px;    
+}
+div.login>div:nth-child(2){
+font-size: 20px;
+font-weight: 700;
+}
+div.login>div.login_input{
+    font-size:12px;
+    padding:20px 15px 15px 15px;
+}
+.input-h{
+height:30px;
+width:310px;
+}
+.p{
+    padding-bottom:5px;
+    padding-left:15px;
+}
+.login_input_text,.login_input_pwd,.login_input_login,.login_inout_register,.login_input_checkbox{
+    padding-bottom:10px;
+}
+.login_input_checkbox{
+    color: #888;
+    padding-bottom: 15px;
+}
+section input{
+    outline:none;
+    border-radius: 5px;
+    border:0px;
+}
+.login_input_login{
+    border-top:1px solid #e5e5e5;
+    padding-top: 15px;
+}
+.shuru_input{
+border: 1px solid #ddd ;
+padding-left: 28px;
+background:#f5f5f5;
+}
+.input_dl{
+    background:#292929;
+    color:#ddd;
+}
+div.login_input div.login_input_text img{
+top:4px;
+left:20px;
+}
+div.login_input div.login_input_pwd img{
+    top:4px;
+    left:20px;
+    }
+.input_zc{
+    background :#ddd;
+}
+.input_dj{
+    cursor: pointer;
+}
+div.login_input div.dsf a{
+display:inline-block;
+width:24px;
+height:24px;
+background:url(../img/login_register/social_icon_24x24.png) no-repeat -48px -72px;
+margin-left:10px;
+top:5px;
+}
+div.login_input div.dsf{
+    padding-top:20px;
+    color: #888;
+}
+div.login_input div.wjmm a{
+color:#444;
+padding:20px;
+line-height:70px;
+}
+div.login_input div.wjmm{
+    text-align: right;
+}
+.hint{
+    text-align:left;
+    margin-top:10px;
+}
+.err{
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    padding: 4px 10px;
+    background: #d14242;
+    border-radius: 3px;
+    transition: all .2s linear;
+    margin-left:20px;
+    display:none;
+}

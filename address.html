@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/address.css">
+</head>
+<body>
+        <div id="header"></div>
+    <section>
+        <div class="address_center">
+             <div class="billing left">
+                 <h3>账单地址</h3>
+                 <div class="country">
+                     <div>国家/地区*</div>
+                     <select name="" id="" class="yh">
+                         <option value="">中国</option>
+                     </select>
+                 </div>
+                 <div class="left">
+                    <div>姓*</div>
+                    <input type="text"  class="yh">
+                 </div>
+                 <div class="right">
+                    <div>名*</div>
+                    <input type="text"  class="yh"> 
+                 </div>
+                 <div style="clear:both"></div>
+                 <div>
+                    <div>公司名称</div>
+                    <input type="text"  class="yh">
+                 </div>
+                 <div>
+                    <div>地址*</div>
+                    <div class="address_dz">
+                        <input type="text" placeholder="编辑地址"  class="yh">
+                    </div>
+                    <div  class="address_dz">
+                        <input type="text" placeholder="楼层、房间号码(可选)"  class="yh">
+                    </div>
+                 </div>
+                 <div>
+                    <div>镇/市*</div>
+                    <input type="text" placeholder="镇/市"  class="yh"> 
+                 </div>
+                 <div class="left">
+                    <div>省*</div>
+                    <select name="" id=""  class="yh">
+                        <option value="">上海</option>
+                    </select>
+                 </div>
+                 <div class="right">
+                    <div>邮政编码*</div>
+                    <input type="text" placeholder="邮政编码"  class="yh"> 
+                 </div>
+                 <div style="clear:both"></div>
+                 <div class="left">
+                    <div>Email 地址*</div>
+                    <input type="text"  class="yh"> 
+                 </div>
+                 <div class="right">
+                    <div>电话*</div>
+                    <input type="text"  class="yh"> 
+                 </div>
+                 <div style="clear:both"></div>
+                 <div>
+                    邮寄到另一个地址*<input type="checkbox">
+                 </div>
+                 <div>
+                    <div> 订单备注</div>
+                    <textarea name="" id="" cols="5" rows="2" placeholder="为您的订单添加备注，例如：送货特别注意事项。"  class="yh"></textarea>
+                 </div>
+             </div>
+             <div class="order_details left">
+                <h2>订单详情</h2>
+                <div class="order_content">
+                    <div class="order_title">
+                        <span>商品</span>
+                        <span>合计</span>
+                    </div>
+                    <div>
+                       <div class="order_shop">
+                           <span class="title">商品名称01</span>
+                           <span class="number">x2</span>
+                            <span class="right">￥5600</span>
+                       </div>
+                       <div class="order_shop">
+                            <span class="title">商品名称02</span>
+                            <span class="number">x1</span>
+                             <span class="right">￥2800</span>
+                        </div>
+                    </div>
+                    <div class="order_subtotal">
+                        <span  class="order_title">购物车小计</span>
+                        <span>￥8400</span>
+                    </div>
+                    <div class="order_freight">
+                        <span  class="order_title">运费</span>
+                        <span>免费送货</span>
+                    </div>
+                    <div class="order_total">
+                        <span class="order_title">订单总计</span>
+                        <span>￥8400</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="pay"><input type="radio">银行汇款(线下)</div>
+                    <div class="pay"><input type="radio">支付宝<img src="img/shop_cart/alipay.png" alt=""></div>
+                </div>
+                <p>使用支付宝付款，如果您没有支付宝账户，也可通过借记卡或信用卡付款。</p>
+                <div class="plane_order">
+                    <button>下单</button>
+                </div>
+             </div>
+             <div style="clear:both"></div>
+             <div class="order_discount">
+                 <div>
+                     <input type="text" placeholder="优惠券号码">
+                 </div>
+                 <div>
+                     <input type="button" value="使用优惠券">
+                 </div>
+             </div>
+        </div>
+    </section>
+<div id="footer"></div>
+        <script src="js/vue.js"></script>
+        <script src="js/jquery-3.2.1.js"></script>
+        <script src="js/header.js"></script>
+        <script src="js/footer.js"></script>
+</body>
+</html>

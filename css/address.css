@@ -1,0 +1,128 @@
+section>div.address_center{
+    width:90%;
+    margin:0 auto;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+div.billing{
+    width:60%;
+    padding-right:30px;
+}
+div.billing>h3{
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+div.billing>div{
+    padding: 3px;
+    margin: 0 0 6px;
+    font-size: 14px;
+    color: #777777;
+}
+div.billing>div>div{
+font-weight: bold;
+color: #4d4d4d;
+line-height:28px;
+}
+div.billing>div .yh{
+font-size: 14px;
+    color: #555555;
+    border-color: #cccccc;
+    background-color: #ffffff;
+    padding: 7px;
+    border: solid 1px #e0e0e0;
+    width:100%;
+}
+div.billing>div.left,div.billing>div.right{
+    width:45%;
+}
+div.address_center .address_dz{
+margin-bottom:9px;
+}
+div.order_details{
+    width:40%;
+    border: 3px solid #777777;
+    padding: 30px;
+}
+div.order_details>h2{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+div.order_details>div.order_content>div>span:last-child{
+    float:right;
+}
+div.order_details>div.order_content>div:not(:first-child){
+    padding:8px;
+    font-size: 14px;
+    color: #777777;
+}
+div.order_details>div.order_content .order_title{
+font-size: 16px;
+font-weight: bold;
+color: #555555;
+padding: 4px 12px;
+}
+div.order_details>div.order_content .number{
+    font-weight: bold;
+}
+div.order_details>div.order_content>div:first-child{
+border-bottom: 3px solid #ddd;
+}
+div.order_details>div.order_content>div>div.order_shop{
+    padding:8px;
+    border-bottom: 1px dotted #ddd;
+}
+div.order_details>div.order_content>div>div.order_shop:last-child{
+    border-bottom: none;
+}
+div.order_details>div.order_content div.order_subtotal{
+border-top: 1px solid #dddddd;
+    border-bottom: 1px dotted #ddd;
+}
+div.order_details>div.order_content div.order_freight{
+border-bottom:1px solid #ddd;
+} 
+div.order_details>div.order_content div.order_total{
+    margin-bottom:24px;
+}
+div.order_details div.pay{
+    margin-bottom:10px;
+    font-size: 15px;
+    color: #4d4d4d;
+}
+div.order_details>p{
+font-size: 15px;
+color: #777777;
+padding-bottom: 15px;
+border-bottom: 1px solid #ddd;
+}
+div.order_details div.plane_order>button{
+    margin-top: 20px;
+    font-size: 16px;
+    color: #ffffff;
+    border: 1px solid #777777;
+    background-color: #777777;
+    padding: 11px 25px;
+}
+div.order_discount{
+padding-top: 20px;
+padding-bottom:32px;
+border: 1px solid #dfdbdf;
+border-width: 2px 0px;
+margin:32px 0;
+}
+div.order_discount>div>input{
+    width:320px;
+    font-size: 16px;
+    border:1px solid  #999999;
+}
+div.order_discount>div>input[type=text]{
+    padding:8px 10px;
+    margin-bottom: 15px;
+}
+div.order_discount>div>input[type=button]{
+color: #777777;
+background-color: #ffffff;
+padding:7px 10px;
+}

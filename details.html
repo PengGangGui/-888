@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/details.css">
+    <script src="js/vue.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+</head>
+<body>
+<div id="header"></div>
+    <section id="detail">
+        <div class="detail_center">
+            <div class="detail_title">
+                <a href="index.html">首页</a><a :href="back">{{search}}</a>> <span>{{list.stitle}}</span>
+            </div>
+            <div class="detail_content">
+                <div class="shop_detail">
+                    <div class="merchandise left">
+                        <div class="merchandise_img">
+                            <img :src="list.lg_url" alt="">
+                            <div class="zoomLens"></div>
+                            <div class="zoomLensContainer"></div>
+                        </div>
+                        <div class="zoomContainer"></div>
+                    </div>
+                     <div class="left">
+                         <h3>{{list.stitle}}</h3>
+                         <div class="fgx"></div>
+                         <span>¥{{list.price}}</span>
+                         <div class="bo">
+                             <button @click="shop_cart">加入购物车</button>
+                             <div class="in_block">
+                                <input type="button" value="-">
+                                <input type="text" value="1">
+                                <input type="button" value="+">
+                            </div>
+                         </div>
+                     </div>
+                </div>
+                <div class="comment">
+                     <ul>
+                         <li>
+                             <a href="#">用户评论
+                                 (<span>0</span>)
+                             </a>
+                         </li>
+                     </ul>
+                     <div class="comments">
+                        <p>目前还未有评论</p>
+                        <p>只有买过此商品的客户登录后才能发表评论</p>
+                     </div>
+                </div>
+                <div class="correlation">
+                        <p>相关商品</p>
+                    <ul class="left">     
+                        <li class="left" v-for="ditem of item">
+                            <a :href=`details.html?id=${ditem.sid}`><img :src="ditem.sm_url"></a>
+                            <p>{{ditem.stitle}}</p>
+                            <span>¥{{ditem.price}}</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+ <div id="footer"></div>
+        <script src="js/header.js"></script>
+        <script src="js/footer.js"></script>
+        <script src="js/details.js"></script>
+</body>
+</html>

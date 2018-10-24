@@ -1,0 +1,172 @@
+section{
+    background-color: #efefef;
+    width:100%;
+}
+.in_block{
+    display:inline-block;
+}
+a{color:#000}
+section>div.detail_center{
+    width:90%;
+    height:100%;
+    margin:0 auto;
+}
+section>div.detail_center>div.detail_title{
+    font-size: 14px;
+    padding-top:20px;
+    padding-bottom:20px;
+   }
+section>div.detail_center>div.detail_content{
+    background: #fff;
+    width:100%;
+    padding-bottom: 8%;
+    margin-bottom: 8%;
+}
+section>div.detail_center>div.detail_content>div.shop_detail{
+padding-top:10%;
+}
+div.detail_content>div.shop_detail::after{
+    content: "";
+    display: block;
+    clear:both;
+}
+section>div.detail_center>div.detail_content div.merchandise{
+    width:35%;
+    margin-left:3%;
+    margin-bottom: 30px;
+    position: relative;
+}
+section>div.detail_center>div.detail_content div.merchandise>div.merchandise_img{
+    width:80%;
+    height:80%;
+    margin:auto;
+    position:relative;
+}
+section>div.detail_center>div.detail_content div.merchandise img{
+    width:100%;
+    height:100%;
+}
+section>div.detail_center>div.detail_content div.left h3{
+    font-size: 28px;
+    font-weight: bold;
+}
+section>div.detail_center>div.detail_content div.left div.fgx{
+width: 210px;
+height: 3px;
+background-color: #e0e0e0;
+margin-bottom: 20px;
+margin-top: 15px;
+}
+section>div.detail_center>div.detail_content div.left span{
+    display: block;
+font-size: 18px;
+font-weight: bold;
+margin-bottom: 8px
+}
+section>div.detail_center>div.detail_content div.left button{
+font-size: 14px;
+    font-weight: normal;
+    color: #ffffff;
+    border:1px solid #ffffff;
+    background-color: #292929;
+    padding: 16px 70px;
+    margin-right:16px;
+}
+section>div.detail_center>div.detail_content div.left input{
+    float:left;
+    border:1px solid  #bcbcbc;
+    height: 47px;
+    width: 34px;
+    font-size: 16px;
+    color: #9e9e9e;
+    background-color: #fff;
+    text-align:center;
+    position: relative;
+    top:18px;
+}
+div.comment{
+    width:90%;
+    margin:0 auto;
+}
+div.comment>ul{
+    width:100%;
+    margin:0 auto;
+    border-top:1px solid #eee;
+    padding-bottom: 20px;
+}
+div.comment>ul a{
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+    border-top: 4px solid #333333;
+    padding:10px 15px;
+    position: relative;
+    top:12px;
+}
+div.comments{
+    border-top:3px solid #eee;
+    border-bottom:1px solid #eee;
+    padding-bottom:9px;
+}
+div.comments p{
+color: rgb(102, 102, 102);
+font-size: 13px;
+padding-top:5px;
+}
+div.correlation{
+    width:90%;
+    margin:0 auto;
+}
+div.correlation>p{
+margin-bottom: 10px;
+margin-top:15px;
+}
+div.correlation ul{
+    width:100%;
+}
+div.correlation ul li{
+    width:20%;
+    font-size: 13px;
+    color: rgb(102, 102, 102);
+}
+div.correlation ul li p{
+    padding-left:53px;
+}
+div.correlation ul li span{
+ padding-left: 53px;
+}
+div.correlation::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/*放大镜*/
+section>div.detail_center>div.detail_content div.merchandise div.zoomLensContainer{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    border:1px solid black;
+    top:0px;
+}
+section>div.detail_center>div.detail_content div.merchandise div.zoomLens{
+    background:#bcbcbc;
+    opacity: 0.3;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top:0px;
+    display:none;
+}
+section>div.detail_center>div.detail_content div.merchandise div.zoomContainer{
+    width:400px;
+    height:344px;
+    z-index:99;
+    border:1px solid #000;
+    position: absolute;
+    background:#fff;
+    background-repeat: no-repeat;
+    background-size: 550px 550px;
+    top:0px;
+    right:-359px;
+    display:none;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Document</title>
+</head>
+<body>
+        <div id="header"></div>
+    <section id="login">
+        <div class="back-img relative">
+            <div class="login absolute">
+                <div class="tc">
+                    <img src="img/login_register/login_register_logo.png" alt="">
+                </div>
+                <div class=" tc">
+                    登录｜注册
+                </div>
+                <div class="login_input">
+                  <div class="p">手机/邮箱</div>
+                  <div class="login_input_text tc relative">
+                      <input type="text" class="input-h shuru_input" @blur="property($event)" v-model="value">
+                      <img src="img/login_register/name.png" alt="" class="absolute">
+                        <div class="hint" id="username1">
+                          <span class="err">手机或邮箱输入错误</span>
+                        </div>
+                        <div class="hint" id="username2">
+                            <span class="err">手机或邮箱格式错误</span>
+                        </div>
+                  </div>
+                  <div class="p">
+                    密码
+                  </div>
+                  <div  class="login_input_pwd tc relative">
+                      <input type="password" class="input-h shuru_input" v-model="pwd">
+                      <img src="img/login_register/pwd.png" alt="" class="absolute">
+                      <div class="hint" id="pwd">
+                        <span class="err">请检查您输入的用户信息和密码是否正确</span>
+                      </div>
+                  </div>
+                  <div class="login_input_checkbox p">
+                      <input type="checkbox" id="checkbox">
+                      <label for="checkbox">记住我(请在私人计算机上使用此功能)</label>
+                  </div>
+                  <div class="login_input_login tc">
+                      <input type="button" value="登录" class="input-h input_dl input_dj" @click="islogin($event)">
+                  </div>
+                  <div class="login_input_register tc"> 
+                      <input type="button" value="注册" class="input-h input_dj input_zc" @click="register">
+                  </div>
+                 <div class="p dsf">
+                     <span>第三方账号登录:</span>
+                    <a href="http://www.qq.com" target="_blank"  title="qq登录" class="relative"></a>
+                 </div>
+                 <div class="p wjmm">
+                     <a href="#"> 忘记密码？点这里找回</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="footer"></div>
+    <script src="js/vue.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+        <script src="js/header.js"></script>
+        <script src="js/footer.js"></script>
+        <script src="js/login.js"></script>
+</body>
+</html>

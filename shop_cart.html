@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/shop_cart.css">
+</head>
+<body>
+    <div id="header"></div>
+<section id="shop_cart">
+    <div class="shop_center">
+        <div class="shop_top">
+            X  <span>优惠券不存在！</span>
+        </div>
+        <div class="shop_bottom"> 
+            <div class="shopping_cart left">
+                <div class="shop_annotation">
+                    <span>商品</span>
+                    <span>价格</span>
+                    <span>数量</span>
+                    <span>合计</span>
+                    <span><input type="checkbox" name="" id="" @change="isChecked">全选</span>
+                </div>
+                <div class="product_shop">
+                    <div class="left" v-for="(item,i) in list"> 
+                        <div class="product_remove">
+                            <a @click="delate(i)"></a>
+                        </div>
+                        <div class="product_shopping">
+                            <a :href=`details.html?id=${item.nid}` target="_blank"><img :src="item.img_url" alt="">
+                            </a>
+                        </div>
+                        <div class="product_title">
+                                <a :href=`details.html?id=${item.nid}` target="_blank">{{item.title}}</a>
+                        </div>
+                        <div class="product_price">
+                                <span>￥{{list[i].price}}</span>
+                        </div>
+                        <div class="product_input">
+                            <div class="left" @click="inputValue($event,i)">
+                                <input type="button" value="-">
+                                <input type="text" v-model="list[i].num" @blur="valueBlur($event,i)">
+                                <input type="button" value="+">
+                            </div>
+                        </div>
+                        <div class="product_total">
+                            <span>￥{{item.num*item.price}}</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="" @change="qx(),isCheck(i)" v-model="list[i].isCheck">
+                        </div>
+                    </div>
+                </div>     
+            </div>
+            <div class="shopping_order left">
+                <h2>购物车总计</h2>
+                <div class="cart_subtotal">
+                    <p>
+                        <span>购物车小计</span>
+                        <span>￥{{qbjg}}</span>
+                    </p>
+                    <p>
+                        <span>运费</span>
+                        <span>免费送货</span>
+                    </p>
+                    <p>
+                        <span>订单总计</span>
+                        <span>￥{{sum}}</span>
+                    </p>
+                </div>
+                <button @click="shopSubmit">前往收银台</button>
+                <div class="shop_discount">
+                    <h2>优惠券：</h2>
+                    <input type="text" placeholder="优惠券号码">
+                    <p><button>使用优惠券</button></p>
+                </div>
+            </div>
+        </div>  
+    </div>
+</section>
+<div id="footer"></div>
+<script src="js/vue.js"></script>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>

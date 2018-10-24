@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    div.bj{
+        height:560px;width:560px;background:red;
+        float:left;
+    }
+    div.bj::before{
+        content: "";
+        display: table;
+    }
+    div.bq{
+        height:500px;width:500px;background:green;margin:30px auto;border-radius:50%;
+        position: relative;text-align: center;
+    }
+    div.hour{
+        width:50px;
+        height:10px;
+        background:yellow;
+    }
+    div.minuter{
+        width:100px;
+        height:10px;
+        background:blue;
+        transform:rotate(80deg)
+    }
+    div.second{
+        width:150px;
+        height:10px;
+        background:black;
+        transform:rotate(150deg)
+    }
+    div.wy{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform-origin:left center;
+    }
+    div.s{
+        position: absolute;
+        top:0;left:48%;
+        transform-origin:50% 250px;
+    }
+    div.sandian{
+        transform:rotate(90deg);
+    }
+    div.liudian{
+        transform:rotate(180deg);
+    }
+    div.jiudian{
+        transform:rotate(270deg);
+    }
+    div.shierdian{
+        transform:rotate(0deg);
+    }
+    div.clock{
+        width:600px;
+        height:560px;
+        float:right;
+        background: yellow;
+    }
+    div#time{
+        margin:50% 100px;
+    }
+    div#time>h3{
+        padding:0;
+        margin:0;
+        background: red;
+    }
+    </style>
+</head>
+<body>
+<div>
+    <div class="bj"> 
+        <div class="bq">
+            <div class="hour wy" id="shi"></div>
+            <div class="minuter wy" id="fen"></div>
+            <div class="second wy" id="miao"></div>
+            <div class="sandian s">Ⅲ</div>
+            <div class="liudian s">VI</div>
+            <div class="jiudian s">IX</div>
+            <div class="shierdian s">XII</div>
+        </div>
+    </div>
+    <div class="clock" >
+        <div id="time">
+            <h3></h3>
+            <h3></h3>
+            <h3></h3>
+        </div>
+    </div>
+</div>
+
+<div>
+    <span class="btn"></span>
+    <span class="btn"></span>
+</div>
+
+
+
+</body>
+<script src="js/1.js"></script>
+</html>

@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+a{text-decoration: none}
+ul{list-style:none;}
+.relative{
+    position:relative;
+}
+.absolute{
+    position:absolute;
+}
+header{
+    height:50px;
+    background:#212121;
+    border-bottom: 1px solid #3a3a3a;
+    width:100%;
+}
+div.header_center{
+    margin:0 auto;
+    width:90%;
+    height:50px;
+    color: #a3a3a3;
+    font-size: 12px;
+    line-height:50px;
+    vertical-align:middle;
+
+}
+.right{
+    float:right;
+}
+.left{
+    float:left;
+}
+.header_center ul.left>li{
+    float:left;
+}
+.header_center ul.right>li{
+    float:right;  
+}
+div.header_left>ul>li,div.header_left>ul{
+padding-right:10px;
+}
+div.header_left>ul>li:nth-child(2){
+    padding-right:20px;
+}
+div.header_right{
+    position: relative;
+}
+div.header_right>ul>li>img{
+    padding-left:20px;
+    cursor: pointer;
+}
+div.header_right>ul>li:last-child>img{
+   position: relative;
+   top:2px;
+}
+div.header_login{
+    background:red;
+    position: absolute;
+    top:40px;
+    right:16px;
+    z-index:100;
+    background-color: rgb(63, 63, 63);
+    display: none;
+}
+div.header_login>ul>li{
+    line-height:30px;
+    text-align:center;
+    width:60px;
+    cursor: pointer;
+
+}
+nav{
+    background:#212121;
+    height:80px;   
+     overflow: hidden;
+     width:100%;
+}
+nav::before{
+    content:"";
+    display:table;
+}
+div.nav_center{
+    margin-top:17px;
+
+}
+div.nav_center>div:nth-child(2)>ul.left>li>a{
+    color:#fff;
+    font-size:13px;
+    text-align:center;
+    padding:0 35px 0 35px;
+}
+.nav_center>div:first-child{
+    display:inline-block;
+    height:56px;
+    padding-right:10px;
+}
+.nav_center>div:first-child>img{
+      height:46px;
+      width:183px;
+}
+.nav_center>div.right>input{
+    width:260px;
+    height:30px;
+    background: transparent;
+    border:none;
+    border-bottom: 1px solid #7a7a7a;
+    color: #939393;
+    font-size: 14px;
+    height: 38px;
+    outline:none;
+    padding:0px 36px 0px 10px;
+
+}
+.nav_center>div.right{
+top:-4px;
+}
+.nav_center>div.right>img{
+    top:18px;
+    right:6px;
+}

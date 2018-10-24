@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/list.css">
+    <script src="js/vue.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+</head>
+<body>
+    <div id="header"></div>
+    <section id="list" v-cloak>
+      <div class="list_center">
+        <div class="list_title">
+             <a href="index.html">首页</a><span class="shop_label">>所有商品</span>
+        </div>
+        <div class="list_details left" >
+              <ul class="tx left" >
+                <li v-for="item of list" :key="item.id">
+                    <div class="relative">
+                        <a :href=`details.html?id=${item.id}` class="imgUrl"></a><img :src="item.img_url" alt=""></div>
+                    <div><a :href=`details.html?id=${item.id}`>{{item.stitle}}</a></div> 
+                    <div><span>¥{{item.price}}</span></div>
+                </li>
+              </ul>
+        </div>
+        <div class="list_pager" @click="but">
+                <button >上一页</button>
+                <a v-for="a in pageCount" @click="cl_pag(a)" :class="{'active':a==pno}">{{a}}</a>
+                <button>下一页</button>
+                <div class="right">
+                    共<span>{{pageCount}}</span>页
+                    到第<input type="text" v-model="value" v-on:keyup.13="pag">页
+                    <input type="button" value="确定" @click="pag">
+                </div>
+        </div>
+      </div>
+      <div class="list_brand">
+        <div class="list_brand_center">
+            <div>
+                <img src="img/list/brandAdidas.png" alt="">
+            </div>
+            <div>
+                <img src="img/list/brandBalance.png" alt="">
+            </div>
+            <div>
+                <img src="img/list/brandConverse.png" alt="">
+            </div>
+            <div>
+                <img src="img/list/brandKappa.png" alt="">
+            </div>
+            <div>
+                <img src="img/list/brandMizuno.png" alt="">
+            </div>
+            <div>
+                <img src="img/list/brandNike.png" alt="">
+            </div>
+            <div>
+                <img src="img/list/brandPuma.png" alt="">
+            </div>
+            <div>
+                <img src="img/list/brandSpalding.png" alt="">
+            </div>
+        </div>
+      </div>
+    </section>
+    <div id="footer"></div>
+        <script src="js/header.js"></script>
+        <script src="js/list.js"></script>
+        <script src="js/footer.js"></script>
+</body>
+</html>

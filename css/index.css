@@ -1,0 +1,547 @@
+.none{
+  display:none !important;
+}
+div.bj{
+  height:560px;width:560px;
+  float:left;
+}
+div.bj::before{
+  content: "";
+  display: table;
+}
+div.bq{
+  height:500px;width:500px;background:rgba(255,255,255,.5);margin:30px auto;border-radius:50%;
+  position: relative;text-align: center;
+}
+div#biaogai{
+  width:12px;
+  height:12px;
+  background:white;
+  z-index:100;
+  border-radius:50%;
+  position:absolute;
+  top:50%;
+  left:49%;
+}
+div.hour{
+  width:50px;
+  height:10px;
+  background:black;
+  border-radius:50%;
+}
+div.minuter{
+  width:100px;
+  height:10px;
+  background:black;
+  border-radius:50%;
+}
+div.second{
+  width:150px;
+  height:10px;
+  background:black;
+  border-radius:50%;
+}
+div.wy{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform-origin:left center;
+}
+div.s{
+  position: absolute;
+  top:0;left:48%;
+  transform-origin:50% 250px;
+}
+div.sandian{
+  transform:rotate(90deg);
+}
+div.liudian{
+  transform:rotate(180deg);
+}
+div.jiudian{
+  transform:rotate(270deg);
+}
+div.shierdian{
+  transform:rotate(0deg);
+}
+div.clock{
+  width:600px;
+  height:560px;
+  float:right;
+}
+div#time{
+  margin:37% 100px;
+}
+div#time>h3{
+  padding:0;
+  margin:0;
+  background: rgba(255,255,255,.5);
+}
+.tx_center{text-align:center;}
+.margin_auto{
+  margin:0 auto;
+}
+section>div.lb{
+  width:100%;
+  height:560px
+}
+div.lb>div.lbner{
+  width:100%;
+  height:560px;
+  overflow:hidden;
+}
+section div.lb img{
+  width:100%;
+  height: 100%;
+  left:100%;
+}
+section div.lb>div>div{
+  width:100%;
+  height:100%;
+  background:black;
+ left:100%
+}
+.show{
+  left:0 !important;
+}
+div.lb>span.lbBtn{
+  display:inline-block;
+  height:80px;
+  width:59px;
+  background:rgba(255,255,255,.2) url(../img/index/an.png) no-repeat;
+  top:40%;
+}
+
+div.lb>span.lbBtnLeft{
+  left:10%;
+  background-position: -268px 0 !important;
+}
+div.lb>span.lbBtnRight{
+  right:10%;
+  background-position: -330px 0 !important;
+}
+div.lb>ul.lbxqq{
+  background:rgba(255,255,255,.2);
+  border-radius:10px;
+  bottom:5%;
+  left:50%;
+}
+div.lb>ul.lbxqq>li{
+   display:inline-block;
+   width:10px;height:10px;
+   border-radius:50%;
+   background:rgba(0,0,0,.5);
+   margin:0 10px 0;
+   text-align:center;
+}
+.lbOn{
+  width:20px !important;
+  background:rgba(0,0,0,1) !important;
+  border-radius:5px !important;
+}
+section>div.introduce{
+  height:760px;
+  width:90%;
+  margin:0 auto;
+  background:#fff;
+}
+section>div.introduce>div{
+  width:50%;
+  height:650px;
+  padding-top:100px;
+}
+section>div.introduce>div.introduce_right>h1{
+  font-size:42px;
+  font-weight: 700;
+  padding-bottom:24px;
+}
+section>div.introduce>div.introduce_right{
+  top:20px;
+  left:40px;
+}
+section>div.introduce>div.introduce_right>ul>li{
+  font-size:14px;
+  font-weight:700;
+  line-height:35px;
+  padding-left:20px;
+  vertical-align: middle;
+}
+section>div.introduce>div.introduce_right>ul>li>span{
+  padding-left:14px;
+}
+section>div.introduce>div.introduce_right>ul{
+padding-bottom:24px;
+}
+section>div.introduce>div.introduce_right>div{
+font-size:15px;
+font-weight:400;
+width:295px;
+line-height:30px;
+padding-bottom:24px;
+}
+section>div.introduce>div.introduce_right button{
+  font-size: 16px;
+  padding: 14px 60px;
+  border-width: 1px;
+  border-color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border-radius: 32px;
+  margin-left:20px;
+  outline:none;
+}
+section>div.introduce>div.introduce_right button:hover{
+  background:white;
+  color:black;
+  transition: all .2s linear;
+}
+section>div.news{
+  height:800px;
+  width:100%;
+  background:url(../img/index/news_background.jpg) no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+}
+section>div.news>div.news_back_filter{
+    width:100%;height:100%;
+    background:rgba(0,0,0,.5);
+}
+section>div.news>div.news_back_filter>div.news_content{
+  width:90%;
+  height:100%;
+  }
+section>div.news>div.news_back_filter>div.news_content>div.news_title{
+  color:#fff;
+  padding-top:80px;
+  padding-bottom:30px;
+}
+section>div.news>div.news_back_filter>div.news_content>div.news_title>h2{
+  font-size:42px;
+}
+section>div.news>div.news_back_filter>div.news_content>div.news_title>p{
+  font-size:18px;
+}
+section>div.news>div.news_back_filter>div.news_content>div.news_title>span{
+    display:inline-block;
+    width:40px;
+    border-bottom:2px solid #fff;
+}
+section>div.news>div.news_back_filter>div.news_content>div.news_content_left>div{
+width:770px;
+height:215px;
+background:#fff;
+margin-bottom: 20px;
+}
+
+section>div.news>div.news_back_filter>div.news_content>div.news_content_left>div>div{
+  display:inline-block;
+  width:400px;
+  vertical-align: top;
+  padding-top:24px;
+  padding-left:12px;
+}
+section>div.news>div.news_back_filter>div.news_content>div.news_content_left>div>div>div{
+  font-size: 16px;
+}
+section>div.news>div.news_back_filter>div.news_content>div.news_content_left>div>img{
+  padding-top:7px;
+  padding-left:7px;
+}
+section>div.news>div.news_back_filter>div.news_content>div.news_content_left>div>div>span{
+color: #999999;
+display:inline-block;
+font-size: 13px;
+margin-top:5px;
+margin-bottom:20px;
+}
+section>div.news>div.news_back_filter>div.news_content>div.news_content_left>div>div>p{
+color: #777777;
+font-size: 13px;
+line-height:22px;
+}
+section>div.news>div.news_back_filter>div.news_content>div.news_content_right{
+  background:#fff;
+  top:26%;
+  right:0;
+  padding:5px;
+}
+div.watches_product{
+  width:100%;
+  height:1200px;
+  background:#efefef;
+}
+div.watches_product>div.product_details{
+  width:90%;
+  height:100%;
+}
+div.watches_product>div.product_details>div.product_title{
+  padding-top:50px;
+  padding-bottom: 20px;
+}
+div.watches_product>div.product_details>div.product_title>h2{
+  font-size:42px;
+}
+div.watches_product>div.product_details>div.product_title>p{
+  font-size:18px;
+  padding:2px;
+}
+div.watches_product>div.product_details>div.product_title>span{
+  display:inline-block;
+  width:40px;
+  border-bottom:2px solid #000000;
+}
+div.watches_product>div.product_details>ul.left{
+  box-sizing: content-box;
+}
+div.watches_product>div.product_details>ul.left>li{
+  float:left;
+  background:#fff;
+  text-align:center;
+  width:23%;
+  margin-top:20px;
+  margin-left:25px;
+  margin-bottom:25px;
+  box-sizing: border-box;
+  position:relative;
+  transition:all 0.7s linear;
+}
+
+div.watches_product>div.product_details>ul.left>li:nth-child(4n-3){
+   margin-left:0px;
+}
+div.watches_product>div.product_details>ul.left>li img{
+  width:100%;
+  transition:all 0.7s linear;
+}
+div.watches_product>div.product_details>ul.left>li>div{
+overflow: hidden;
+}
+div.watches_product>div.product_details>ul.left>li p{
+  color: #999999;
+  padding-top:10px;
+  padding-bottom: 20px;
+  border-bottom:2px solid transparent;
+  transition:all 0.7s linear;
+}
+div.watches_product>div.product_details>ul.left>li span{
+  color: #666666;
+  font-size: 15px;
+  display:inline-block;
+  padding-top:10px;
+  padding-bottom:20px;
+}
+div.watches_product>div.product_details>ul.left>li:hover{
+  box-shadow: 0 0 10px #cfcfcf;
+  top:-10px;
+}
+div.watches_product>div.product_details>ul.left>li:hover p{
+  color:#000 !important;
+  border-bottom:2px solid rgb(153, 153, 153);
+}
+div.watches_product>div.product_details>ul.left>li:hover img{
+  transform: scale(1.2);
+}
+div.watches_product>div.product_details>div.watProButton{
+  width:90%;
+  margin:0 auto;
+  height:30px;
+  text-align:center;
+  padding-top:62px;
+}
+div.watches_product>div.product_details>div.watProButton a{
+color:#000;
+border-radius:32px;
+font-size: 16px;
+padding:8px 50px;
+background:#fff;
+}
+section>div.handsome_introduce>div{
+  width:100%;
+  height:700px;
+ background: #ccc;
+}
+section>div.handsome_introduce>div>div.handInLeft{
+  width:50%;
+  height:100%;
+  background:black;
+  color:#fff;
+}
+section>div.handsome_introduce>div>div.handInLeft>div.handInLeft_title{
+ padding-top:40%;
+ padding-bottom:32px;
+}
+section>div.handsome_introduce>div>div.handInLeft div.handInLeft_title h1{font-size:42px;
+}
+section>div.handsome_introduce>div>div.handInLeft div.handInLeft_title>p{
+  font-size:18px;
+  padding:2px;
+}
+section>div.handsome_introduce>div>div.handInLeft div.handInLeft_title span{
+  display:inline-block;
+  width:40px;
+  border-bottom:2px solid #fff;
+}
+section>div.handsome_introduce>div>div.handInLeft>p{
+  line-height:30px;
+}
+section>div.handsome_introduce>div>div.handInLeft>div.hand_button>a{
+  color:#000;
+border-radius:32px;
+font-size: 16px;
+padding:8px 50px;
+background:#fff;
+}
+section>div.handsome_introduce>div>div.handInLeft>div.hand_button{
+  padding-top:100px;
+}
+section>div.handsome_introduce>div>div.handInRight{
+  width:50%;
+  height:90%;
+}
+section>div.handsome_introduce>div>div.handInRight img{
+  width:100%;
+  height:100%;
+  margin-top:5%;
+}
+section>div.Dynamic{
+  width:100%;
+  height:970px;
+  background:url(../img/index/Dynamic.jpg) no-repeat;
+  background-size:100% 100%;
+  background-attachment: fixed;
+}
+section>div.Dynamic>div.Dynamic_filter{
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,.8);
+}
+section>div.Dynamic>div.Dynamic_filter>div.Dynamic_center{
+  width:90%;
+  height:100%;
+  margin:0 auto;
+}
+section>div.Dynamic>div.Dynamic_filter>div.Dynamic_center>div.Dynamic_title{
+  color:#fff;
+  padding-top:80px;
+  padding-bottom:30px;
+}
+section>div.Dynamic>div.Dynamic_filter>div.Dynamic_center>div.Dynamic_title h1{
+  font-size:42px;
+}
+section>div.Dynamic>div.Dynamic_filter>div.Dynamic_center>div.Dynamic_title p{
+  font-size:18px;
+}
+section>div.Dynamic>div.Dynamic_filter>div.Dynamic_center>div.Dynamic_title span{
+  display:inline-block;
+  width:40px;
+  border-bottom:2px solid #fff;
+}
+section>div.Dynamic>div.Dynamic_filter>div.Dynamic_center>ul>li{
+  height:150px;
+  width:100%;
+  background: rgba(255,255,255,0.1);
+  border-bottom:1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  transition:all .5s linear;
+}
+.newsLi{ 
+  background:#000 !important;
+}
+.newsDiv{
+  margin-left:150px !important;
+}
+section>div.Dynamic>div.Dynamic_filter>div.Dynamic_center>ul>li>div{
+  width:800px;
+  height:100%;
+  margin:0 auto;
+  transition:all .5s linear;
+}
+section>div.Dynamic>div.Dynamic_filter>div.Dynamic_center>ul>li>div>div>span:first-child{
+  color: #b2b2b2;
+  font-size: 36px;
+}
+section>div.Dynamic>div.Dynamic_filter>div.Dynamic_center>ul>li>div>div>span:last-child{
+color: #ffffff;
+font-size: 14px;
+}
+section>div.Dynamic>div.Dynamic_filter>div.Dynamic_center>ul>li>div>div>h3{
+  font-size: 18px;
+  color:#dbdbdb;
+  padding-bottom:8px;
+}
+section>div.Dynamic>div.Dynamic_filter>div.Dynamic_center>ul>li>div>div>p{
+  font-size: 12px;
+  color: #8c8c8c;
+  max-width:500px;
+  line-height:24px;
+}
+section>div.Dynamic>div.Dynamic_filter>div.Dynamic_center>ul>li>div>div:first-child{
+  width:190px;
+text-align: right;
+margin-top:50px;
+}
+section>div.Dynamic>div.Dynamic_filter>div.Dynamic_center>ul>li>div>div:last-child{
+padding-left:100px;
+margin-top:50px;
+}
+section>div.Dynamic>div.Dynamic_filter>div.Dynamic_center>ul>li>i{
+  display: inline-block;
+  width:40px;
+  height:40px;
+  background:url(../img/index/li8.png) no-repeat;
+  position: absolute;
+  top:54px;
+  right:20%;
+  display:none;
+}
+section>div.Dynamic>div.Dynamic_filter>div.Dynamic_center>div.Dynamic_button{
+  width:100%;
+  text-align: center;
+  padding-top:70px;
+}
+section>div.Dynamic>div.Dynamic_filter>div.Dynamic_center>div.Dynamic_button a{
+    font-size: 14px;
+    padding: 8px 40px;
+    border:1px solid #fff;
+    color: rgb(255, 255, 255);
+}
+section>div.Dynamic>div.Dynamic_filter>div.Dynamic_center>div.Dynamic_button a:hover{
+  opacity: 0.5;
+}
+aside{
+  position: fixed;
+  bottom:20%;
+  right:0px;
+  display: none;
+}
+aside>ul li{
+  width:54px;
+  height:54px;
+  background:rgb(153,153,153);
+  border: 1px solid #000;
+}
+aside>ul li:not(:last-child){
+  border-bottom: none;
+}
+aside>ul li:hover{
+  background: rgb(28,28,28);
+}
+aside>ul li i{
+ display:inline-block;
+ width:30px;
+ height:30px;
+ margin:12px;
+ background: url(../img/index/pic.png) no-repeat;
+}
+aside i.aside_i1{
+  background-position:0px 0px;
+}
+aside i.aside_i2{
+  background-position:0px -40px;
+}
+aside i.aside_i3{
+  background-position:0px -264px;
+}
+aside>ul li:hover i{
+  background-position-x:-40px; 
+}

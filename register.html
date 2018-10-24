@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/register.css">
+    <title>Document</title>
+</head>
+<body>
+        <div id="header"></div>
+    <section>
+        <div class="reg_fiter relative">
+            <div class="register absolute">
+                <div class="tc">
+                    <img src="img/login_register/login_register_logo.png" alt="">
+                </div>
+                <div class=" tc">
+                    登录｜注册
+                </div>
+                <div class="input" id="register">
+                    <div class="phone relative">
+                        <p>手机号码<span>*</span></p>
+                        <input type="text" class="shuru" name="phone" v-model="phone" @blur="repetition($event)" placeholder="请输入11位手机号码">
+                        <i></i>
+                    </div>
+                    <div class="hint">
+                        <span class="err">
+                            手机号码格式错误
+                        </span>    
+                    </div>
+                    <div class="hint">
+                            <span class="err">
+                                手机号码已被注册
+                            </span>    
+                    </div>
+                    <div class="code relative">
+                        <p>昵称<span>*</span></p>
+                        <input type="text"  class="shuru" name="nickname" v-model="nickname" @blur="repetition($event)" placeholder="请输入您的昵称(至少两位,最多12位)">
+                        <i></i>
+                    </div>
+                    <div class="hint">
+                            <span class="err">
+                                    昵称不符合规范
+                            </span>    
+                        </div>
+                        <div class="hint">
+                                <span class="err">
+                                        昵称已被使用
+                                </span>    
+                        </div>
+                    <div class="email relative">
+                        <p>邮箱<span>*</span></p>
+                        <input type="email"  class="shuru" name="email" v-model="email" @blur="repetition($event)" placeholder="请输入您的邮箱">
+                        <i></i>
+                    </div>
+                    <div class="hint">
+                        <span class="err">
+                                邮箱格式错误
+                        </span>       
+                    </div>
+                    <div class="hint">
+                            <span class="err">
+                                    邮箱已被注册
+                            </span>       
+                    </div>
+                    <div class="pwd relative">
+                        <p>密码<span>*</span></p>
+                        <input type="password"  class="shuru" name="pwd" v-model="pwd" @blur="repetition($event)" placeholder="请输入5-15位密码">
+                        <i></i>
+                    </div>
+                    <div class="hint">
+                            <span class="err">
+                                   密码格式不正确
+                            </span>       
+                    </div>
+                    <div class="hint">
+                            <span class="err">
+                               密码强度太低
+                            </span>       
+                    </div>
+                    <div class="cpwd relative">
+                        <p>再输入一次密码<span>*</span></p>
+                        <input type="password"  class="shuru" name="upwd" v-model="upwd" @blur="repetition($event)" placeholder="请再一次输入密码">
+                        <i></i>
+                    </div>
+                    <div class="hint">
+                            <span class="err">
+                               密码不匹配
+                            </span>       
+                    </div>
+                    <div class="strength">
+                          <p>密码强度</p>
+                          <div class="strength_plain">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                          </div>
+                    </div>
+                    <div class="input_checkbox">
+                        <input type="checkbox" id="checkbox_register" name="clause" v-model="isclause">
+                        <label for="checkbox_register">我同意《用户手册》和《登录条款》</label>
+                        <div class="hint">
+                            <span class="err">
+                               您必须同意我们的《用户手册》和《登录条款》
+                            </span>       
+                        </div>
+                    </div>
+                    <div class="input_register">
+                        <input type="button" value="注册"  class="shuru  reg_button" @click="transfer">
+                    </div>
+                    <div class="input_login"> 
+                        <input type="button" value="已经有账号了？请登录"  class="shuru  reg_button" @click="login">
+                    </div>
+                   <div class="p dsf">
+                       <span>第三方账号登录:</span>
+                      <a href="http://www.qq.com" target="_blank"  title="qq登录" class="relative"></a>
+                   </div>
+                </div>   
+            </div>
+        </div>
+    </section>
+    <div id="footer"></div>
+    <script src="js/vue.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>

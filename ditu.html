@@ -1,0 +1,50 @@
+<!DOCTYPE html>  
+<html>
+<head>  
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+<title>Hello, World</title>   
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/ditu.css">
+<script src="js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=u70A5pnNrRtRT1XAgwM5jL2YIVj1Gv97">
+</script>
+</head>  
+<body>  
+<div id="header"></div>
+<section id="list">
+        <div class="list_center">
+          <div class="list_title">
+               <a href="index.html">首页</a><span class="shop_label">>地图</span>
+          </div>
+            <div id="container"></div>
+</section>
+<div id="footer"></div> 
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+<script type="text/javascript"> 
+var map = new BMap.Map("container");
+var point = new BMap.Point(112.636477,26.8947);
+map.centerAndZoom(point, 18);
+
+//为百度地图添加控件
+//导航控件
+map.addControl(new BMap.NavigationControl());
+//添加缩放控件
+map.addControl(new BMap.ScaleControl());
+//添加概览图控件
+map.addControl(new BMap.OverviewMapControl());
+//添加地图类型控件
+map.addControl(new BMap.MapTypeControl());
+//添加覆盖物
+map.enableScrollWheelZoom();
+//1:创建覆盖物
+var mk = new BMap.Marker(point);
+//2:指定覆盖物类型[动画]
+mk.setAnimation(BMAP_ANIMATION_BOUNCE);
+//3:将覆盖添加地图
+map.addOverlay(mk);
+</script>  
+</body>  
+</html>
